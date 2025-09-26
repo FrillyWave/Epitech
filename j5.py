@@ -150,6 +150,7 @@ else :
 
 
 #3.2
+'''
 liste = [
     "Alice", "Bob", "Charlie", "Diana", "Eve",
     "Alice", "Frank", "Grace", "Hugo", "Ivy",
@@ -160,3 +161,6 @@ liste = [
 clean_liste = list(set(liste))
 
 print(clean_liste)
+
+'''
+

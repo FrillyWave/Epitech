@@ -131,6 +131,7 @@ grade_weight_mapping = {
 
 #3.1
 
+"""
 names = [
     "Alice", "Bob", "Charlie", "Diana", "Eve",
     "Frank", "Grace", "Hugo", "Ivy", "Jack",
@@ -144,3 +145,17 @@ if given_name in names:
     print("Welcome in")
 else :
     print("GET OUT")
+
+"""
+
+
+#3.2
+liste = [
+    "Alice", "Bob", "Charlie", "Diana", "Eve",
+    "Alice", "Frank", "Grace", "Hugo", "Ivy",
+    "Jack", "Eve", "Karen", "Leo", "Mona",
+    "Bob", "Nina", "Oscar", "Paul", "Alice"
+]
+
+for elem in liste:
+    pass    

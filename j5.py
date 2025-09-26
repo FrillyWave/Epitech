@@ -109,10 +109,38 @@ print(liste)
 
 '''
 
-#2.1
+#2.1 / 2.2 / 2.3
 
+
+'''
 student = {
     "name": "Joan",
     "academic_year": 2025,
-    "units" : [{"name": "Web dev", "credits": 10, "grade": "A"}, {"name": "Jave", "credits": 5, "grade": "C"}, {"name": "Network", "credits": 2, "grade": "E"}]
+    "units" : [{"name": "Web dev", "credits": 4, "grade": "A"}, {"name": "Jave", "credits": 2, "grade": "C"}, {"name": "Network", "credits": 0, "grade": "E"}],
+    "total_credit": 6
 }
+
+grade_weight_mapping = {
+    "A": 4,
+    "B": 3,
+    "C": 2,
+    "D": 1,
+    "E": 0
+}
+'''
+
+#3.1
+
+names = [
+    "Alice", "Bob", "Charlie", "Diana", "Eve",
+    "Frank", "Grace", "Hugo", "Ivy", "Jack",
+    "Karen", "Leo", "Mona", "Nina", "Oscar",
+    "Paul", "Quinn", "Rose", "Sam", "Tina"
+]
+
+given_name = str(input("Enter your name : "))
+
+if given_name in names:
+    print("Welcome in")
+else :
+    print("GET OUT")

@@ -157,5 +157,6 @@ liste = [
     "Bob", "Nina", "Oscar", "Paul", "Alice"
 ]
 
-for elem in liste:
-    pass    
+clean_liste = list(set(liste))
+
+print(clean_liste)

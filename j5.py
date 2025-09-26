@@ -105,6 +105,7 @@ for i in range(10000):
     rdm = random.randint(1, 10000)
     liste.append(rdm)
 
+liste.sort()
 print(liste)
 
 '''

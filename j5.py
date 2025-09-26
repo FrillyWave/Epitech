@@ -97,6 +97,7 @@ print(liste)
 
 #Challenge
 
+'''
 import random
 liste = []
 
@@ -106,3 +107,12 @@ for i in range(10000):
 
 print(liste)
 
+'''
+
+#2.1
+
+student = {
+    "name": "Joan",
+    "academic_year": 2025,
+    "units" : [{"name": "Web dev", "credits": 10, "grade": "A"}, {"name": "Jave", "credits": 5, "grade": "C"}, {"name": "Network", "credits": 2, "grade": "E"}]
+}

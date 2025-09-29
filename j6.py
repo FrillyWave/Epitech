@@ -32,12 +32,14 @@ print(pokemon)
 
 #1.4
 
+
 types = {
     "Electric": [],
     "Fire": [],
     "Grass": []
 }
 
+'''
 types["Electric"].append("Pikachu")
 types["Fire"].append("Scovillain")
 types["Fire"].append("Charmander")
@@ -46,3 +48,7 @@ types["Grass"].append("Scovillain")
 types["Grass"].append("Leafeaon")
 
 print(types)
+'''
+
+for k in types.keys():
+    print(k)

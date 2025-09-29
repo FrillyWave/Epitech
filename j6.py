@@ -62,6 +62,9 @@ for k in types.keys():
 
 '''
 
+#1.8 / 1.9 / 1.10
+
+'''
 superheroes = {
     " Batman " : {
     " id " : 1 ,
@@ -88,6 +91,83 @@ superheroes = {
 superheroes[" Batman "][" aliases "].append("Caped Crusader")
 #print(superheroes)
 
-superheroes["Wolverine"] = {"id": 3}
+superheroes["Wolverine"] = {"id": 3, " aliases ": []}
 
-print(superheroes)
+#print(superheroes)
+
+for i in superheroes :
+    print(f'{i} : ')
+    for j in superheroes[i][" aliases "]:
+        if i == "Wolverine":
+            print("No alias found")
+        print(j)
+
+
+'''
+
+'''
+values = {
+    " dalmatians " : 101 ,
+    " pi " : 3.14 ,
+    " beast " : 666 ,
+    " life " : 42 ,
+    " googol ": 10**100 ,
+    " jordan ": 23 ,
+    " life , the universe and everything " : 42 ,
+    " emergency " : 911 ,
+    " euler " : 2.71828
+}
+
+max = ''
+for i in values:
+    if values[i] > max:
+        max == i
+
+print(max)
+'''
+
+#Challenge
+
+'''
+one = ["A", "E", "I", "O", "U", "L", "N", "S", "T", "R"]
+
+two = ["D", "G"]
+
+three = ["B", "C", "M", "P"]
+
+four = ["F", "H", "V", "W", "Y"]
+
+five = ["K"]
+
+eight = ["J", "X"]
+
+ten = ["Q", "Z"]
+
+essai = input("Entrez un mot : ")
+
+points = 0
+
+for letter in essai:
+    if letter.capitalize() in one:
+        points += 1
+    elif letter.capitalize() in two:
+        points += 2
+    elif letter.capitalize() in three:
+        points += 3
+    
+    elif letter.capitalize() in four:
+        points += 4
+
+    elif letter.capitalize() in five:
+        points += 5
+    
+    elif letter.capitalize() in eight:
+        points += 8
+    
+    elif letter.capitalize() in ten:
+        points += 10
+
+print(points)
+'''
+
+

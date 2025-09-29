@@ -30,7 +30,7 @@ print(pokemon)
 #We see that the value of pikachu is replaced by the new value
 
 
-#1.4
+#1.4 / 1.5 / 1.6
 
 
 types = {
@@ -51,4 +51,11 @@ print(types)
 '''
 
 for k in types.keys():
+    print(k)
+
+
+print("=====================")
+for k in types.keys():
+    if k == "Grass" or k == "Fire":
+        continue
     print(k)

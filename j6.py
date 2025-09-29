@@ -29,3 +29,20 @@ print(pokemon)
 
 #We see that the value of pikachu is replaced by the new value
 
+
+#1.4
+
+types = {
+    "Electric": [],
+    "Fire": [],
+    "Grass": []
+}
+
+types["Electric"].append("Pikachu")
+types["Fire"].append("Scovillain")
+types["Fire"].append("Charmander")
+types["Grass"].append("Bulbausau")
+types["Grass"].append("Scovillain")
+types["Grass"].append("Leafeaon")
+
+print(types)

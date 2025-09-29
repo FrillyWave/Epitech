@@ -189,14 +189,15 @@ print(is_raining, is_sunny)
 
 '''
 
-#2.3
-
+#2.3 / 2.4
+'''
 listes = {
     "l1" : [ True , True ],
     "l2" : [ False , False ],
     "l3" : [ True , False ],
     "l4" : [ False , True ]
 }
+
 
 for k, v in listes.items():
     if v[0] and v[1] :
@@ -206,3 +207,21 @@ for k, v in listes.items():
     
     else : 
         print(f"{k} : None are True")
+'''
+
+#2.5
+'''
+is_raining = False
+is_umbrella = False
+at_home = True
+
+if is_raining :
+    if is_umbrella or at_home:
+        print("ok")
+
+    else:
+        print("not ok")
+    
+else :
+    print("ras")
+'''

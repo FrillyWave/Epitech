@@ -171,3 +171,38 @@ print(points)
 '''
 
 
+#2.1 / 2.2
+
+'''
+is_sunny = True
+
+is_raining = False
+
+print(is_raining, is_sunny)
+
+
+is_sunny = True
+
+is_raining = not is_sunny
+
+print(is_raining, is_sunny)
+
+'''
+
+#2.3
+
+listes = {
+    "l1" : [ True , True ],
+    "l2" : [ False , False ],
+    "l3" : [ True , False ],
+    "l4" : [ False , True ]
+}
+
+for k, v in listes.items():
+    if v[0] and v[1] :
+        print(f"{k} : Both are True")
+    if v[0] or v[1] :
+        print(f"{k} : At least one is True")
+    
+    else : 
+        print(f"{k} : None are True")

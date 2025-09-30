@@ -211,7 +211,7 @@ for k, v in listes.items():
 
 #2.5
 '''
-is_raining = False
+is_raining = True
 is_umbrella = False
 at_home = True
 

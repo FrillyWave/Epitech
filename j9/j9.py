@@ -29,27 +29,29 @@ def my_division(a, b):
 #my_division(42, 0)
  
 
-#1.3
+#1.3 / 1.4
 
  
-def my_count(*args):
-    if len(args) > 2:
-        print("Error : Too many arguments")
+def my_count(stop, start=0, step=1):
+    if not all(isinstance(i, int) for i in [stop, start, step]):
+        print("Error : All arguments must be integers")
         return
-    if len(args) == 2 and args[0] > args[1]:
-        actual = args[1]
-        for i in range(args[1], args[0] + 1):
-            print(actual)
-            actual += 1
-    actual = 0
-    for i in range(args[0]):
-        print(actual)
-        actual += 1
+    if step == 0:
+        print("Error : Step must be different from zero")
+        return
+    if (step > 0 and start >= stop) or (step < 0 and start <= stop):
+        print("Error : Infinite loop detected")
+        return
+    i = start
+    while (step > 0 and i < stop ) or (step < 0 and i > stop):
+        print(i)
+        i += step
 
-#my_count(8, 3) #Print too many numbers, I don't know why
+
+my_count(8, 3) 
  
 
-#1.4 (not possible until 1.3 is fixed)
+
 
 #1.5
 
@@ -233,4 +235,4 @@ def frequency_letter():
     for char, count in frequency.items():
         print(f"{char} : {count}")
 
-frequency_letter()
+#frequency_letter()

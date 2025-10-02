@@ -6,7 +6,7 @@ def sum(*args):
         try : 
             total += arg
         except TypeError as e:
-            print("L'argument doit être un nombre")
+            print("Args must be numbers")
     print(total)
 
 #sum(1)
@@ -182,7 +182,7 @@ def rewrite(file, file_to_copy):
     with open(file, 'w', encoding='utf-8') as f:
         f.write(content)
 
-#rewrite("j9/toto.txt", "j9/zen.txt")
+rewrite("j9/toto.txt", "j9/zen.txt")
 
 
 #2.8
@@ -197,4 +197,40 @@ def longest(file):
             longest_word = word
     print(f"{longest_word} : {len(longest_word)}")
 
-longest("j9/zen.txt")
+#longest("j9/zen.txt")
+
+#2.9
+
+def frequency_word():
+    with open("j9/zen.txt", 'r', encoding='utf-8') as f:
+        content = f.read().lower()
+
+    words = content.split()
+    frequency = {}
+    for word in words:
+        word = word.strip('.,!?;"()[]{}<>')
+        if word in frequency:
+            frequency[word] += 1
+        else:
+            frequency[word] = 1
+    for word, count in frequency.items():
+        print(f"{word} : {count}")
+
+#frequency_word()
+
+#2.10
+
+def frequency_letter():
+    with open("j9/zen.txt", 'r', encoding='utf-8') as f:
+        content = f.read().lower()
+
+    frequency = {}
+    for char in content:
+        if char in frequency:
+            frequency[char] += 1
+        else:
+            frequency[char] = 1
+    for char, count in frequency.items():
+        print(f"{char} : {count}")
+
+frequency_letter()

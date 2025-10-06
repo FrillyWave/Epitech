@@ -120,4 +120,4 @@ def pi_dec_bis(cpt):
         return cpt**2 / 6
     return (cpt * 2 + 1)**2 / (6 + pi_dec_bis(cpt+1))
 
-print(pi_dec_bis(0)+3)
+#print(pi_dec_bis(0)+3)

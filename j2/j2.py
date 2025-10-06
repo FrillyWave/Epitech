@@ -111,4 +111,13 @@ def pi_dec():
     pi_dec = res - 3
     return pi_dec
 
-print(pi_dec())
+#print(pi_dec())
+
+#4.2
+
+def pi_dec_bis(cpt): 
+    if cpt == 900:
+        return cpt**2 / 6
+    return (cpt * 2 + 1)**2 / (6 + pi_dec_bis(cpt+1))
+
+print(pi_dec_bis(0)+3)
